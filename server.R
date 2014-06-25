@@ -1,20 +1,30 @@
 library(shiny)
-
-# Define server logic required to draw a histogram
+library(ggplot2)
+ 
 shinyServer(function(input, output) {
-
-  # Expression that generates a histogram. The expression is
-  # wrapped in a call to renderPlot to indicate that:
-  #
-  #  1) It is "reactive" and therefore should re-execute automatically
-  #     when inputs change
-  #  2) Its output type is a plot
-
-  output$distPlot <- renderPlot({
-    x    <- faithful[, 2]  # Old Faithful Geyser data
-    bins <- seq(min(x), max(x), length.out = input$bins + 1)
-
-    # draw the histogram with the specified number of bins
-    hist(x, breaks = bins, col = 'darkgray', border = 'white')
+ 
+  dataset <- reactive({
+    diamonds[sample(nrow(diamonds), input$sampleSize),]
   })
+ 
+  output$plot <- renderPlot({
+    
+    p <- ggplot(dataset(), aes_string(x=input$x, y=input$y)) + geom_point()
+    
+    if (input$color != 'None')
+      p <- p + aes_string(color=input$color)
+    
+    facets <- paste(input$facet_row, '~', input$facet_col)
+    if (facets != '. ~ .')
+      p <- p + facet_grid(facets)
+    
+    if (input$jitter)
+      p <- p + geom_jitter()
+    if (input$smooth)
+      p <- p + geom_smooth()
+    
+    print(p)
+    
+  }, height=700)
+  
 })
