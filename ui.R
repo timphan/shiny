@@ -1,6 +1,6 @@
 library(shiny)
 library(ggplot2)
-nba<- read.csv("http://timphan.github.io/nba.csv")
+nba<- read.csv("nba.csv")
  
  
 shinyUI(pageWithSidebar(
