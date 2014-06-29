@@ -4,7 +4,7 @@ library(ggplot2)
 shinyServer(function(input, output) {
  
   dataset <- reactive({
-    diamonds[sample(nrow(diamonds), input$sampleSize),]
+    nba[sample(nrow(nba), input$sampleSize),]
   })
  
   output$plot <- renderPlot({
