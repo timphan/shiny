@@ -37,10 +37,25 @@ that will aid in my professional and personal development in my mid-twenties.
 
 ####__Fitness__
 
+1. 500 x 5 (crunches, pullups, pushups, situps, leglifts)  
+2. 5000 x 5 (+10 lbs resistance)  
+3. 5000 x 5 (+20 lbs resistance + incline)  
+
 ####__Running__
 
+1. Run 50 miles (indoor)  
+2. Run 500 miles (anywhere)  
+3. Run 500 miles x 5 (beach, urban, cross-country, parks, indoor)  
+
+
 __Mental__ - Writing, reading, coding, cooking
-******
+
+####__Reading__
+
+1. Read 5 books  
+2. Read 5 books x 5 subjects (classics/literature, nonfiction/politics, scifi, tech, career)  
+3. Read 50 books x 10 subjects (+creative, spiritual, history, contemporary, other)  
+
 __Community__ - Museums, libraries, volunteering, Meetups
 
 ![image HIMYM](http://2.bp.blogspot.com/-aUx-DXnkOzc/UyrR6iSTuxI/AAAAAAAAGOI/6t6nkgJdL-o/s1600/tumblr_mmse80G55h1rc3z3ro1_1280.gif)
