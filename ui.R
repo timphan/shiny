@@ -1,12 +1,6 @@
 library(shiny)
 
-# Define UI for miles per gallon application
-shinyUI(pageWithSidebar(
+# Define server logic required to plot various variables against mpg
+shinyServer(function(input, output) {
 
-  # Application title
-  headerPanel("Miles Per Gallon"),
-
-  sidebarPanel(),
-
-  mainPanel()
-))
+})
